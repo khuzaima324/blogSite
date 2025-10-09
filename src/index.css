@@ -1,1 +1,20 @@
-@import 'tailwindcss'
+@import 'tailwindcss';
+
+
+:root {
+  --color-primary: #F25912;
+  --color-secondary: #5C3E94;
+  --color-darkPurple: #412B6B;
+  --color-darker: #211832;
+}
+
+/* hover and animation styling */
+.header-btn {
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.header-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(33, 24, 50, 0.25);
+  background: rgba(255, 255, 255, 0.1) !important;
+}

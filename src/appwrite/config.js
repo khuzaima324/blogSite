@@ -76,7 +76,7 @@
 //             ) 
 //         } catch (error) {
 //             console.log("error getPost", error);
-            
+
 //         }
 //     }
 
@@ -90,7 +90,7 @@
 //             )
 //         } catch (error) {
 //             console.log("error Get POsts", error);
-            
+
 //         }
 //     }
 
@@ -258,9 +258,13 @@ export class Service {
   }
 
   // ✅ Get File Preview
+  // getFilePreview(fileId) {
+  //   return this.bucket.getFilePreview(conf.appWriteBucketId, fileId);
+  // }
   getFilePreview(fileId) {
-    return this.bucket.getFilePreview(conf.appWriteBucketId, fileId);
+    return this.bucket.getFileView(conf.appWriteBucketId, fileId);
   }
+
 }
 
 // ✅ Export single instance

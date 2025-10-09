@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
-import './App.css'
+import './index.css'
 import authService from './appwrite/auth';
 import { login, logout } from './store/authSlice'
 import Header from './components/header/header';
@@ -29,7 +29,7 @@ function App() {
     }
     else{
       return (
-        <div className='min-h-screen bg-gray-400 flex items-center'>
+        <div className='min-h-screen bg-[var(--color-darkPurple)] flex items-center'>
           <div className='w-full block'>
             <Header/>
               <main>
